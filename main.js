@@ -63,44 +63,44 @@ function my_keydown(e)
 
 function up()
 {
-	if(rover_y >=0)
+	if(greencar_y>=0)
 	{
-		rover_y = rover_y - 10;
-		console.log("When up arrow is pressed,  x = " + rover_x + " | y = " +rover_y);
+		greencar_y = greencar_y - 10;
+		console.log("When up arrow is pressed,  x = " + greencar_x + " | y = " +greencar_y);
 		 uploadBackground();
-		 uploadrover();
+		 uploadgreencar();
 	}
 }
 
 function down()
 {
-	if(rover_y <=500)
+	if(greencar_y <=500)
 	{
-		rover_y =rover_y+ 10;
-		console.log("When down arrow is pressed,  x = " + rover_x + " | y = " +rover_y);
+		greencar_y =greencar_y+ 10;
+		console.log("When down arrow is pressed,  x = " + greencar_x+ " | y = " +greencar_y);
 		uploadBackground();
-		 uploadrover();
+		uploadgreencar();
 	}
 }
 
 function left()
 {
-	if(rover_x >= 0)
+	if(greencar_x >= 0)
 	{
-		rover_x =rover_x - 10;
-		console.log("When left arrow is pressed,  x = " + rover_x + " | y = " +rover_y);
+		greencar_x=greencar_x - 10;
+		console.log("When left arrow is pressed,  x = " + greencar_x+ " | y = " +greencar_y);
 		uploadBackground();
-		 uploadrover();
+		uploadgreencar();
 	}
 }
 
 function right()
 {
-	if(rover_x <= 700)
+	if(greencar_x<= 700)
 	{
-		rover_x =rover_x + 10;
-		console.log("When right arrow is pressed,  x = " + rover_x + " | y = " +rover_y);
+		greencar_x=greencar_x + 10;
+		console.log("When right arrow is pressed,  x = " + greencar_x + " | y = " +greencar_y);
 		uploadBackground();
-		uploadrover();
+		uploadgreencar();
    }
 }
